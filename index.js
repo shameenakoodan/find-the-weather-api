@@ -1,6 +1,9 @@
 import express from 'express';
+import router from './routes/weather.js';
 
 const app = express();
+
+app.use('/api/weather',router);
 
 const port = process.env.PORT || 3002;
 
